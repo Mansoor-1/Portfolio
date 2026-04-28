@@ -1,66 +1,109 @@
 body{
-    margin:0;
-    font-family:Inter, sans-serif;
-    background:linear-gradient(135deg,#f9fafb,#eef2ff);
-    color:#111827;
+margin:0;
+font-family:Inter,sans-serif;
+background:#0b0f19;
+color:white;
 }
 
 .hero{
-    text-align:center;
-    padding:60px 20px 30px;
+text-align:center;
+padding:100px 20px 60px;
+}
+
+.badge{
+display:inline-block;
+padding:6px 12px;
+background:#ff3d71;
+border-radius:20px;
+font-size:12px;
+margin-bottom:15px;
 }
 
 .hero h1{
-    font-size:48px;
-    background:linear-gradient(90deg,#4F46E5,#22C55E);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-    margin:0;
+font-size:60px;
+margin:0;
+font-weight:800;
 }
 
 .hero p{
-    color:#6B7280;
-    margin-top:10px;
+color:#b5b5b5;
+margin-top:10px;
+}
+
+.cta{
+margin-top:25px;
+}
+
+.cta a{
+text-decoration:none;
+padding:12px 18px;
+margin:5px;
+border-radius:8px;
+font-weight:600;
+display:inline-block;
+}
+
+.cta a:first-child{
+background:#ff3d71;
+color:white;
+}
+
+.cta .secondary{
+border:1px solid #444;
+color:white;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:50px;
+padding:40px 20px;
+text-align:center;
+}
+
+.stats h3{
+font-size:28px;
+margin:0;
+color:#ff3d71;
 }
 
 .section{
-    max-width:1100px;
-    margin:auto;
-    padding:40px 20px;
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
 }
 
 h2{
-    color:#4F46E5;
-    margin-bottom:20px;
+color:#ff3d71;
+margin-bottom:20px;
+font-size:24px;
 }
 
 .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:16px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
 }
 
-.card{
-    background:white;
-    padding:16px;
-    border-radius:12px;
-    text-decoration:none;
-    color:#4F46E5;
-    font-weight:600;
-    box-shadow:0 4px 10px rgba(0,0,0,0.05);
-    transition:0.3s;
-    display:block;
-    text-align:center;
+.grid a{
+background:#111827;
+padding:16px;
+border-radius:12px;
+text-decoration:none;
+color:white;
+transition:0.3s;
+border:1px solid #222;
+text-align:center;
 }
 
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 12px 25px rgba(0,0,0,0.1);
+.grid a:hover{
+transform:translateY(-5px);
+background:#1f2937;
+border-color:#ff3d71;
 }
 
 footer{
-    text-align:center;
-    padding:40px;
-    color:#6B7280;
-    font-size:14px;
+text-align:center;
+padding:40px;
+color:#777;
 }
