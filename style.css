@@ -95,20 +95,32 @@ font-size:13px;
 .section{
 max-width:1100px;
 margin:auto;
-padding:35px 20px;
+padding:30px 20px;   /* reduced gap */
 }
 
-.section h2{
-font-size:24px;
-margin-bottom:4px;
+/* HEADINGS COLORS */
+.shopify{color:#16a34a;}
+.wordpress{color:#2563eb;}
+.wix{color:#f59e0b;}
+.webflow{color:#7c3aed;}
+.squarespace{color:#0ea5e9;}
+.other{color:#111827;}
+
+/* SUB TEXT */
+.sub{
+color:#6b7280;
+margin-top:4px;
+margin-bottom:10px;
+font-size:14px;
+line-height:1.4;
 }
 
-.platform-title{
+/* BUILDER LINE */
+.builders{
+margin-top:0;
+margin-bottom:10px;
 font-size:13px;
-color:#4f46e5;
-font-weight:600;
-margin-bottom:12px;
-letter-spacing:0.3px;
+color:#4b5563;
 }
 
 /* GRID */
@@ -116,6 +128,7 @@ letter-spacing:0.3px;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:14px;
+margin-top:10px;
 }
 
 /* CARDS */
@@ -129,16 +142,34 @@ font-weight:600;
 transition:0.2s;
 border:1px solid #e5e7eb;
 text-align:center;
-min-height:100px;
 display:flex;
 align-items:center;
 justify-content:center;
+min-height:100px;
 }
 
 .grid a:hover{
 transform:translateY(-6px);
 box-shadow:0 18px 35px rgba(0,0,0,0.08);
 border-color:#4f46e5;
+}
+
+/* OTHER TECHNOLOGIES ROW */
+.tech-row{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-top:10px;
+}
+
+.tech-row span{
+background:white;
+padding:10px 14px;
+border-radius:10px;
+border:1px solid #e5e7eb;
+font-size:13px;
+font-weight:600;
+color:#111827;
 }
 
 /* FOOTER */
