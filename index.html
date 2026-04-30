@@ -1,42 +1,347 @@
-<section class="section">
-    <h2>Fixes, Maintenance & Technical Support</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Umer Khan | Portfolio</title>
 
-    <p class="desc">
-        I specialize in troubleshooting, repairing, and optimizing websites across all major platforms.
-        Whether it's a broken layout, slow performance, or critical errors, I can quickly diagnose and fix issues.
-    </p>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-    <div class="services-grid">
+<style>
 
-        <div class="service-box">
-            <h4>WordPress Fixes</h4>
-            <p>Elementor, Gutenberg, Divi, Avada, Oxygen Builder issues, plugin conflicts, theme errors, and WooCommerce fixes.</p>
-        </div>
+/* BASE */
+body{
+margin:0;
+font-family:Inter, sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+}
 
-        <div class="service-box">
-            <h4>Performance & Security</h4>
-            <p>Speed optimization, Core Web Vitals improvements, malware removal, security hardening, and website recovery.</p>
-        </div>
+/* HERO */
+.hero{
+text-align:center;
+padding:100px 20px 60px;
+}
 
-        <div class="service-box">
-            <h4>Shopify Support</h4>
-            <p>Theme customization, app conflicts, checkout issues, layout bugs, and performance improvements.</p>
-        </div>
+.badge{
+display:inline-block;
+padding:6px 14px;
+background:#22c55e;
+border-radius:20px;
+font-size:12px;
+margin-bottom:15px;
+font-weight:600;
+}
 
-        <div class="service-box">
-            <h4>Wix & Webflow Fixes</h4>
-            <p>Layout issues, responsiveness fixes, animations, CMS problems, and general troubleshooting.</p>
-        </div>
+.hero h1{
+font-size:56px;
+margin:0;
+font-weight:800;
+background:linear-gradient(to right,#38bdf8,#6366f1);
+-webkit-background-clip:text;
+color:transparent;
+}
 
-        <div class="service-box">
-            <h4>Squarespace Support</h4>
-            <p>Design fixes, content structure issues, mobile optimization, and performance tuning.</p>
-        </div>
+.hero p{
+margin-top:14px;
+margin-bottom:18px;
+color:#cbd5f5;
+}
 
-        <div class="service-box">
-            <h4>General Debugging</h4>
-            <p>Broken websites, critical errors, white screens, hosting issues, and full website restoration.</p>
-        </div>
+/* CTA */
+.cta{
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap;
+}
 
-    </div>
+.cta a{
+padding:12px 20px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.cta a:first-child{
+background:#6366f1;
+color:white;
+}
+
+.cta .secondary{
+border:1px solid #94a3b8;
+color:white;
+}
+
+/* STATS */
+.stats{
+display:flex;
+justify-content:center;
+gap:60px;
+padding:40px;
+text-align:center;
+}
+
+.stats h3{
+font-size:28px;
+color:#38bdf8;
+margin:0;
+}
+
+.stats p{
+color:#94a3b8;
+}
+
+/* INTRO */
+.intro{
+text-align:center;
+margin-bottom:30px;
+}
+
+.intro p{
+color:#94a3b8;
+}
+
+/* SECTION */
+.section{
+max-width:1100px;
+margin:30px auto;
+padding:30px;
+background:rgba(255,255,255,0.04);
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.08);
+}
+
+.section h2{
+margin-bottom:10px;
+}
+
+.desc{
+color:#94a3b8;
+margin-bottom:20px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+@media(max-width:900px){
+.grid{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:500px){
+.grid{grid-template-columns:1fr;}
+}
+
+/* CARDS */
+.grid a{
+background:rgba(255,255,255,0.06);
+border:1px solid rgba(255,255,255,0.12);
+padding:22px;
+border-radius:16px;
+text-decoration:none;
+color:white;
+font-weight:600;
+text-align:center;
+transition:0.3s;
+}
+
+.grid a:hover{
+transform:translateY(-10px);
+background:rgba(255,255,255,0.1);
+border-color:#818cf8;
+}
+
+/* SERVICES GRID */
+.services-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+margin-top:15px;
+}
+
+@media(max-width:900px){
+.services-grid{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:500px){
+.services-grid{grid-template-columns:1fr;}
+}
+
+.service-box{
+background:rgba(255,255,255,0.06);
+border:1px solid rgba(255,255,255,0.12);
+padding:20px;
+border-radius:16px;
+transition:0.3s;
+}
+
+.service-box h4{
+margin-bottom:8px;
+}
+
+.service-box p{
+font-size:13px;
+color:#cbd5f5;
+}
+
+.service-box:hover{
+transform:translateY(-6px);
+border-color:#818cf8;
+}
+
+/* TECH */
+.tech-row{
+display:flex;
+flex-wrap:wrap;
+gap:14px;
+justify-content:center;
+margin-top:10px;
+}
+
+.tech-row span{
+background:rgba(255,255,255,0.08);
+padding:10px 16px;
+border-radius:10px;
+font-size:13px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:50px;
+color:#94a3b8;
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+<div class="badge">Available for Freelance Work</div>
+
+<h1>Umer Khan</h1>
+
+<p>Web Developer with 8+ Years Experience — WordPress, Shopify, Webflow, Wix & Squarespace</p>
+
+<div class="cta">
+<a href="mailto:uk5699428@gmail.com">Hire Me</a>
+<a href="https://www.upwork.com/freelancers/~014e4d31b416e775d8?mp_source=share" target="_blank" class="secondary">Upwork Profile</a>
+</div>
+</header>
+
+<section class="stats">
+<div><h3>8+</h3><p>Years Experience</p></div>
+<div><h3>100+</h3><p>Projects Delivered</p></div>
+<div><h3>5+</h3><p>Platforms Mastered</p></div>
 </section>
+
+<section class="intro">
+<h2>Selected Work</h2>
+<p>High-performing websites focused on UI, speed, and conversion.</p>
+</section>
+
+<!-- WORDPRESS -->
+<section class="section">
+<h2>WordPress</h2>
+<div class="grid">
+<a href="https://lemonadedesign.co/" target="_blank">Lemonade</a>
+<a href="https://idigcarrots.com/" target="_blank">iDigCarrots</a>
+<a href="https://www.ayonaudiousa.com/" target="_blank">Ayon Audio</a>
+<a href="https://mastermind.com/" target="_blank">Mastermind</a>
+<a href="https://movingmountainsrecovery.com/" target="_blank">Recovery</a>
+<a href="https://www.worldwildlife.org/" target="_blank">WWF</a>
+</div>
+</section>
+
+<!-- SHOPIFY -->
+<section class="section">
+<h2>Shopify</h2>
+<div class="grid">
+<a href="https://www.quadlockcase.com/" target="_blank">QuadLock</a>
+<a href="https://shokz.com/" target="_blank">Shokz</a>
+<a href="http://www.thegrommet.com/" target="_blank">Grommet</a>
+<a href="http://www.diamondsinternational.com/" target="_blank">Diamonds</a>
+<a href="https://dbjourney.com/" target="_blank">DB Journey</a>
+<a href="https://burrow.com" target="_blank">Burrow</a>
+</div>
+</section>
+
+<!-- WEBFLOW -->
+<section class="section">
+<h2>Webflow</h2>
+<div class="grid">
+<a href="https://www.panijoga.pl/" target="_blank">Yoga</a>
+<a href="https://clinicaltrials.takeda.com/" target="_blank">Takeda</a>
+<a href="https://www.cloudbees.com/" target="_blank">CloudBees</a>
+<a href="https://www.desertchill.ae/" target="_blank">Desert Chill</a>
+<a href="https://www.sommersgen.com/" target="_blank">Sommers</a>
+<a href="http://millanfamilyfoundation.org/" target="_blank">Foundation</a>
+</div>
+</section>
+
+<!-- WIX -->
+<section class="section">
+<h2>Wix</h2>
+<div class="grid">
+<a href="https://www.jsiupes.com/" target="_blank">JSIUPES</a>
+<a href="https://www.highland-yoga.com/" target="_blank">Yoga</a>
+<a href="https://www.jacksbarlondon.co.uk/" target="_blank">Bar</a>
+<a href="https://www.jollybodies.com/" target="_blank">Fitness</a>
+<a href="https://www.evolvehealing.net/" target="_blank">Healing</a>
+<a href="https://www.seasonsincolour.com/" target="_blank">Design</a>
+</div>
+</section>
+
+<!-- SQUARESPACE -->
+<section class="section">
+<h2>Squarespace</h2>
+<div class="grid">
+<a href="https://www.ulrikonhands.com/" target="_blank">Ulrikon</a>
+<a href="https://smartbodyandperformance.com/" target="_blank">Fitness</a>
+<a href="https://www.jonesbbqkc.com/" target="_blank">BBQ</a>
+<a href="https://www.aaksonline.com/" target="_blank">Aaks</a>
+<a href="https://www.soilboy.sg/" target="_blank">Soilboy</a>
+<a href="https://hungryharvest.net/" target="_blank">Harvest</a>
+</div>
+</section>
+
+<!-- FIXES -->
+<section class="section">
+<h2>Fixes, Maintenance & Support</h2>
+<p class="desc">Troubleshooting, debugging, performance optimization, and full website recovery across all platforms.</p>
+
+<div class="services-grid">
+<div class="service-box"><h4>WordPress Fixes</h4><p>Elementor, Divi, Avada, Gutenberg, Oxygen issues and WooCommerce bugs.</p></div>
+<div class="service-box"><h4>Performance & Security</h4><p>Speed optimization, Core Web Vitals, malware removal and security fixes.</p></div>
+<div class="service-box"><h4>Shopify Support</h4><p>Theme issues, app conflicts, checkout bugs and store optimization.</p></div>
+<div class="service-box"><h4>Wix & Webflow</h4><p>Layout fixes, responsiveness, animations and CMS issues.</p></div>
+<div class="service-box"><h4>Squarespace</h4><p>Design fixes, structure improvements and mobile optimization.</p></div>
+<div class="service-box"><h4>General Debugging</h4><p>Broken websites, server errors and full website recovery.</p></div>
+</div>
+</section>
+
+<!-- OTHER -->
+<section class="section">
+<h2>Other Technologies</h2>
+<div class="tech-row">
+<span>React.js</span>
+<span>Next.js</span>
+<span>MERN Stack</span>
+<span>API Integration</span>
+<span>Custom Web Apps</span>
+<span>Frontend Development</span>
+</div>
+</section>
+
+<footer>
+<p>📍 Carol Stream, Illinois, USA</p>
+<p>Email: uk5699428@gmail.com</p>
+</footer>
+
+</body>
+</html>
