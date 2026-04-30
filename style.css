@@ -1,6 +1,4 @@
-/* =========================
-   GLOBAL
-========================= */
+/* GLOBAL */
 body{
 margin:0;
 font-family:Inter, sans-serif;
@@ -9,9 +7,7 @@ color:white;
 scroll-behavior:smooth;
 }
 
-/* =========================
-   NAVBAR (PREMIUM INLINE)
-========================= */
+/* NAVBAR */
 .navbar{
 position:sticky;
 top:0;
@@ -23,52 +19,41 @@ align-items:center;
 
 padding:14px 40px;
 
-background:rgba(10,15,30,0.6);
-backdrop-filter:blur(14px);
+background:rgba(10,15,30,0.7);
+backdrop-filter:blur(12px);
 
-border-bottom:1px solid rgba(255,255,255,0.06);
+border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
 .navbar .logo{
 font-weight:800;
 font-size:18px;
-color:white;
-letter-spacing:0.5px;
 }
 
 .navbar ul{
 display:flex;
-align-items:center;
-gap:8px;
+gap:18px;
 list-style:none;
 margin:0;
 padding:0;
 }
 
 .navbar ul li a{
-display:inline-block;
-padding:8px 14px;
-border-radius:999px;
-
 color:#cbd5f5;
 text-decoration:none;
 font-weight:500;
 font-size:14px;
-
-transition:all 0.25s ease;
-border:1px solid transparent;
+transition:0.3s;
+padding:6px 10px;
+border-radius:20px;
 }
 
 .navbar ul li a:hover{
-background:rgba(99,102,241,0.15);
-color:#ffffff;
-border:1px solid rgba(99,102,241,0.4);
-transform:translateY(-1px);
+background:rgba(99,102,241,0.2);
+color:white;
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 .hero{
 text-align:center;
 padding:90px 20px 60px;
@@ -85,7 +70,7 @@ font-weight:600;
 }
 
 .hero h1{
-font-size:56px;
+font-size:52px;
 margin:0;
 font-weight:800;
 background:linear-gradient(to right,#38bdf8,#6366f1);
@@ -124,9 +109,7 @@ border:1px solid #94a3b8;
 color:white;
 }
 
-/* =========================
-   STATS
-========================= */
+/* STATS */
 .stats{
 display:flex;
 justify-content:center;
@@ -145,15 +128,13 @@ margin:0;
 color:#94a3b8;
 }
 
-/* =========================
-   SECTION BASE
-========================= */
+/* SECTION */
 .section{
 max-width:1100px;
 margin:30px auto;
 padding:30px;
 background:rgba(255,255,255,0.04);
-border-radius:20px;
+border-radius:18px;
 border:1px solid rgba(255,255,255,0.08);
 }
 
@@ -161,9 +142,7 @@ border:1px solid rgba(255,255,255,0.08);
 margin-bottom:15px;
 }
 
-/* =========================
-   PROJECT GRID
-========================= */
+/* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
@@ -181,26 +160,22 @@ gap:18px;
 .grid a{
 background:rgba(255,255,255,0.06);
 border:1px solid rgba(255,255,255,0.12);
-padding:22px;
-border-radius:16px;
-
+padding:20px;
+border-radius:14px;
 text-decoration:none;
 color:white;
 font-weight:600;
 text-align:center;
-
 transition:0.3s;
 }
 
 .grid a:hover{
-transform:translateY(-8px);
-border-color:#818cf8;
+transform:translateY(-6px);
 background:rgba(255,255,255,0.1);
+border-color:#818cf8;
 }
 
-/* =========================
-   SERVICES
-========================= */
+/* SERVICES */
 .services-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
@@ -219,7 +194,7 @@ gap:18px;
 background:rgba(255,255,255,0.06);
 border:1px solid rgba(255,255,255,0.12);
 padding:20px;
-border-radius:16px;
+border-radius:14px;
 transition:0.3s;
 }
 
@@ -237,35 +212,29 @@ font-size:13px;
 color:#cbd5f5;
 }
 
-/* =========================
-   TECH TAGS
-========================= */
+/* TECH */
 .tech-row{
 display:flex;
 flex-wrap:wrap;
-gap:12px;
+gap:10px;
 justify-content:center;
 }
 
 .tech-row span{
 background:rgba(255,255,255,0.08);
-padding:10px 16px;
+padding:10px 14px;
 border-radius:10px;
 font-size:13px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 footer{
 text-align:center;
 padding:50px;
 color:#94a3b8;
 }
 
-/* =========================
-   SCROLL OFFSET FIX
-========================= */
+/* OFFSET */
 section{
 scroll-margin-top:80px;
 }
